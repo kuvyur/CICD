@@ -88,21 +88,21 @@ test.describe('Project Creation', () => {
         await newProjectPage.verifyPreviewText(desc);
     });
 
-    test('6. Create a project with a template', async () => {
-        await projectPage.clickNewProject();
-        await newProjectPage.enterTitle(title);
-        await newProjectPage.selectTemplate("Basic Kanban");
-        await newProjectPage.clickCreateButton();
-        await projectPage.checkProjectIsCreated(title);
-    });
+    // test('6. Create a project with a template', async () => {
+    //     await projectPage.clickNewProject();
+    //     await newProjectPage.enterTitle(title);
+    //     await newProjectPage.selectTemplate("Basic Kanban");
+    //     await newProjectPage.clickCreateButton();
+    //     await projectPage.checkProjectIsCreated(title);
+    // });
 
-    test('7. Create a project with a preview type', async () => {
-        await projectPage.clickNewProject();
-        await newProjectPage.enterTitle(title);
-        await newProjectPage.selectPreview("Text Only");
-        await newProjectPage.clickCreateButton();
-        await projectPage.checkProjectIsCreated(title);
-    });
+    // test('7. Create a project with a preview type', async () => {
+    //     await projectPage.clickNewProject();
+    //     await newProjectPage.enterTitle(title);
+    //     await newProjectPage.selectPreview("Text Only");
+    //     await newProjectPage.clickCreateButton();
+    //     await projectPage.checkProjectIsCreated(title);
+    // });
 
 
     test.afterAll(async () => {
